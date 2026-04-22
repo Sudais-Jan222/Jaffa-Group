@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAFFA GROUP | Premium Real Estate</title>
+    <meta name="description"
+        content="JAFFA GROUP - Designing architecture for life. Premium real estate and architectural design.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Outfit:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Jaffa Group</span>
+                <span class="logo-design-build">Design Build</span>
+            </div>
+                        <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="cottages.html">Cottages</a></li>
+                <li><a href="townhouses.html">Townhouses</a></li>
+                <li><a href="settlements.html">Settlements</a></li>
+                <li><a href="investing-spaces.html">Investing spaces</a></li>
+                </ul>
+            <div class="nav-cta">
+                <a href="#contact" class="btn-primary">Contact Us &darr;</a>
+            </div>
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+            <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <div class="mobile-nav-inner">
+            <div class="mobile-nav-header">
+                <span class="section-number">02/</span>
+                <span class="section-title">Catalog</span>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="cottages.html" class="mobile-nav-link">Cottages</a></li>
+                <li><a href="townhouses.html" class="mobile-nav-link">Townhouses</a></li>
+                <li><a href="settlements.html" class="mobile-nav-link">Settlements</a></li>
+                <li><a href="investing-spaces.html" class="mobile-nav-link">Investing spaces</a></li>
+            </ul>
+            <a href="index.html#contact" class="mobile-nav-cta">Contact Us &rarr;</a>
+        </div>
+    </div>
+
+    <!-- Hero Section (Commented out) -->
+    <!-- 
+    <header class="hero">
+        <div class="hero-bg-container">
+            <div class="hero-bg active" style="background-image: url('showcase-7.webp');"></div>
+            <div class="hero-bg next"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1 class="brand-title">JAFFA GROUP</h1>
+                <p class="brand-subtitle">Designing architecture for life</p>
+            </div>
+
+            <div class="hero-right">
+                <div class="cards-wrapper">
+                    <div class="project-card" id="card-1">
+                        <div class="card-img-container">
+                            <img src="showcase-3.webp" alt="Project 1">
+                        </div>
+                        <div class="card-info">
+                            <h3>Project "Alpha"</h3>
+                            <p>Premium Living Experience</p>
+                            <span class="see-case">See full case &rarr;</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" id="card-2">
+                        <div class="card-img-container">
+                            <img src="showcase6.webp" alt="Project 2">
+                        </div>
+                        <div class="card-info">
+                            <h3>Project "Elite"</h3>
+                            <p>Modern Architecture</p>
+                            <span class="see-case">See full case &rarr;</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-container">
+                    <div class="journey-bar">
+                        <div class="journey-progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    -->
+
+    <!-- New Scroll-Triggered Hero -->
+    <section class="scroll-hero">
+        <div class="scroll-hero-sticky">
+            <canvas id="hero-canvas"></canvas>
+
+            <div class="scroll-hero-content">
+                <div class="hero-text-overlay">
+                    <div class="hero-eyebrow">It's called</div>
+                    <h1 class="brand-title">JAFFA GROUP</h1>
+                    <p class="brand-subtitle">Designing architecture for life</p>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="indicator-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-top-left" data-aos="fade-right">
+                <span class="section-number">01/</span>
+                <span class="section-title">About us</span>
+            </div>
+            <div class="about-image-left" data-aos="fade-in" data-aos-delay="100" style="grid-column: 1; grid-row: 2; width: 100%; height: 100%; min-height: 250px; border-radius: 4px; overflow: hidden; margin-top: 2rem;">
+                <img src="about_us_image_1776795262153.png" alt="Modern Architecture" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+
+            <div class="about-heading-right" data-aos="fade-up">
+                <h2 class="hero-subheading">
+                    Where <span class="highlight">architecture</span> <br>
+                    meets <span class="highlight">living</span>
+                </h2>
+            </div>
+
+            <div class="about-bottom-left" data-aos="fade-up" data-aos-delay="200">
+                <p class="about-desc">
+                    We create residential projects where clean architecture meets quality of living.
+                </p>
+            </div>
+
+            <div class="about-bottom-right" data-aos="fade-up" data-aos-delay="400">
+                <a href="#" class="btn-more">More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog-section" id="catalog">
+        <div class="catalog-container">
+            <!-- Sidebar / Categories -->
+            <div class="catalog-sidebar">
+                <div class="sidebar-header">
+                    <span class="section-number">02/</span>
+                    <span class="section-title">Catalog</span>
+                </div>
+
+                <ul class="category-list" id="dynamic-category-list">
+                    <li class="active" data-category="Cottages"><a href="javascript:void(0)">Cottages</a></li>
+                    <li data-category="Townhouses"><a href="javascript:void(0)">Townhouses</a></li>
+                    <li data-category="Settlements"><a href="javascript:void(0)">Settlements</a></li>
+                    <li data-category="Investing spaces"><a href="javascript:void(0)">Investing spaces</a></li>
+                </ul>
+            </div>
+
+            <div class="catalog-content">
+                <div class="catalog-header" data-aos="fade-up">
+                    <h2 class="catalog-title">A space that feels <br> like <span class="black-bg">a home</span></h2>
+                </div>
+
+                <div class="catalog-gallery" data-aos="fade-up" data-aos-delay="200">
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="catalog-slider">
+                            <div class="slide"><img src="showcase-3.webp" alt="Catalog 1"></div>
+                            <div class="slide"><img src="showcase-4.webp" alt="Catalog 2"></div>
+                            <div class="slide"><img src="showcase-5.webp" alt="Catalog 3"></div>
+                            <div class="slide"><img src="showcase6.webp" alt="Catalog 4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-footer">
+                    <p class="catalog-desc">
+                        Each project balances architecture, function, and visual calm – designed to live in today and
+                        value tomorrow.
+                    </p>
+                    <div class="slider-nav">
+                        <button class="nav-btn prev" id="catalog-prev">&larr;</button>
+                        <button class="nav-btn next" id="catalog-next">&rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section class="steps-section" id="steps">
+        <div class="steps-container" data-aos="fade-up">
+            <div class="steps-header">
+                <div class="sidebar-header">
+                    <span class="section-number">03/</span>
+                    <span class="section-title">Steps</span>
+                </div>
+                <h2 class="steps-headline">
+                    Create <span class="dim">your own</span> <br>
+                    house <span class="dim">right now</span>
+                </h2>
+            </div>
+
+            <div class="steps-nav-bar">
+                <div class="step-btn active" data-step="Research">Research</div>
+                <span class="step-arrow">&rsaquo;</span>
+                <div class="step-btn" data-step="Concept">Concept</div>
+                <span class="step-arrow">&rsaquo;</span>
+                <div class="step-btn" data-step="Form">Form</div>
+                <span class="step-arrow">&rsaquo;</span>
+                <div class="step-btn" data-step="Visuals">Visuals</div>
+                <span class="step-arrow">&rsaquo;</span>
+                <div class="step-btn" data-step="Completion">Completion</div>
+            </div>
+
+            <div class="steps-content-grid">
+                <div class="steps-left">
+                    <p class="steps-desc" id="step-description">
+                        We begin by analyzing the site and client needs, ensuring every project is grounded in purpose
+                        and context.
+                    </p>
+                </div>
+                <div class="steps-right">
+                    <div class="step-visual-card">
+                        <img src="step_research_custom_1_1776795074352.png" alt="Research Model 1" id="step-img-1" style="width:100%; height:100%; object-fit:cover; border-radius:4px;">
+                    </div>
+                    <div class="step-visual-card">
+                        <img src="step_research_custom_2_1776795096704.png" alt="Research Model 2" id="step-img-2" style="width:100%; height:100%; object-fit:cover; border-radius:4px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase Section -->
+    <section class="showcase-section" id="portfolio">
+        <div class="showcase-container">
+            <div class="showcase-header">
+                <div class="sidebar-header">
+                    <span class="section-number">04/</span>
+                    <span class="section-title">Showcase</span>
+                </div>
+                <h2 class="showcase-title"><span class="dim">Project</span> <br> Showcase</h2>
+            </div>
+
+            <div class="showcase-filters-container">
+                <div class="filter-pills">
+                    <button class="filter-pill active">Villas</button>
+                    <button class="filter-pill">Commercial</button>
+                    <button class="filter-pill">Sustainable</button>
+                    <button class="filter-pill">Interior</button>
+                </div>
+            </div>
+
+            <div class="showcase-grid">
+                <!-- Card 1 -->
+                <div class="showcase-card slide-left" data-category="Villas">
+                    <div class="card-parallax-container">
+                        <img src="Hero Photos-20260418T055411Z-3-001/Hero Photos/showcase-7.webp" alt="Aura Villa">
+                    </div>
+                    <div class="card-content">
+                        <h3>Aura Villa - Malibu</h3>
+                        <p>A minimalist retreat integrating passive cooling and local stone.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="showcase-card slide-right" data-category="Commercial">
+                    <div class="card-parallax-container">
+                        <img src="Hero Photos-20260418T055411Z-3-001/Hero Photos/showcase-2.webp" alt="Skyline Lofts">
+                    </div>
+                    <div class="card-content">
+                        <h3>Skyline Lofts - Zurich</h3>
+                        <p>Award-winning sustainable urban living in the heart of Switzerland.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="showcase-card slide-left" data-category="Villas">
+                    <div class="card-parallax-container">
+                        <img src="Hero Photos-20260418T055411Z-3-001/Hero Photos/showcase-3.webp"
+                            alt="Ethereal Heights">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ethereal Heights - London</h3>
+                        <p>Modern architectural marvel overlooking the Thames.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="showcase-card slide-right" data-category="Sustainable">
+                    <div class="card-parallax-container">
+                        <img src="Hero Photos-20260418T055411Z-3-001/Hero Photos/showcase-4.webp" alt="Crystal Cove">
+                    </div>
+                    <div class="card-content">
+                        <h3>Crystal Cove - Dubai</h3>
+                        <p>Luxury seaside living with cutting-edge desalination technology.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="showcase-card slide-left" data-category="Interior">
+                    <div class="card-parallax-container">
+                        <img src="Hero Photos-20260418T055411Z-3-001/Hero Photos/showcase-5.webp" alt="Verdant Oasis">
+                    </div>
+                    <div class="card-content">
+                        <h3>Verdant Oasis - Singapore</h3>
+                        <p>Biophilic design bringing nature into the workspace.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="showcase-card slide-right" data-category="Villas">
+                    <div class="card-parallax-container">
+                        <img src="Hero Photos-20260418T055411Z-3-001/Hero Photos/showcase6.webp" alt="Stellar Ridge">
+                    </div>
+                    <div class="card-content">
+                        <h3>Stellar Ridge - Oslo</h3>
+                        <p>High-altitude living with panoramic views of the fjords.</p>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="showcase-card slide-left" data-category="Commercial">
+                    <div class="card-parallax-container">
+                        <img src="Hero Photos-20260418T055411Z-3-001/Hero Photos/T 2.webp" alt="Nova Terrace">
+                    </div>
+                    <div class="card-content">
+                        <h3>Nova Terrace - Tokyo</h3>
+                        <p>Future-proof commercial space with integrated smart systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showcase-footer">
+                <a href="portfolio.html" class="btn-portfolio">View our portfolio &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Park City Luxury Section -->
+    <section class="info-section-yellow" id="park-city">
+        <div class="info-yellow-container">
+            <div class="info-sidebar">
+                <div class="sidebar-header">
+                    <span class="section-number">05/</span>
+                    <span class="section-title">Park City</span>
+                </div>
+            </div>
+
+            <div class="info-content">
+                <h2 class="info-headline" data-aos="fade-up">
+                    Why Park City Is One of the Best <br>
+                    Places to Build a <strong>Luxury Home</strong>
+                </h2>
+
+                <div class="info-grid">
+                    <!-- Block 1 -->
+                    <div class="info-block" data-aos="fade-up" data-aos-delay="100">
+                        <span class="block-number">01</span>
+                        <h3>World-Class Ski Resorts</h3>
+                        <p>
+                            Park City is home to two of the most renowned ski destinations in North America:
+                            <strong>Park City Mountain</strong> and <strong>Deer Valley Resort</strong>.
+                            These resorts attract luxury homeowners from across the world.
+                        </p>
+                    </div>
+
+                    <!-- Block 2 -->
+                    <div class="info-block" data-aos="fade-up" data-aos-delay="200">
+                        <span class="block-number">02</span>
+                        <h3>Incredible Natural Landscape</h3>
+                        <p>
+                            Homes here often feature: panoramic mountain views, expansive outdoor decks,
+                            floor-to-ceiling windows, and private ski access.
+                        </p>
+                    </div>
+
+                    <!-- Block 3 -->
+                    <div class="info-block" data-aos="fade-up" data-aos-delay="300">
+                        <span class="block-number">03</span>
+                        <h3>Strong Real Estate Investment</h3>
+                        <p>
+                            Luxury homes in Park City have experienced significant appreciation due to
+                            limited land and high demand.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-cta-container" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#" class="btn-primary-dark">start your build &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Project Inquiry & Tour Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-grid">
+                <!-- Left: Inquiry Form -->
+                <div class="contact-form-side" data-aos="fade-right">
+                    <span class="section-number">06/</span>
+                    <h2 class="contact-headline">Start Your Project</h2>
+
+                    <form class="project-form" id="projectForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="Email Address" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType">
+                                    <option value="" disabled selected>Villa, Warehouse, Development, Interior Design
+                                    </option>
+                                    <option value="villa">Villa</option>
+                                    <option value="warehouse">Warehouse</option>
+                                    <option value="development">Development</option>
+                                    <option value="interior">Interior Design</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="vision">Your Vision</label>
+                            <textarea id="vision" placeholder="Your Vision" rows="6"></textarea>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn-quote">Request Quote</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right: House Tour Video -->
+                <div class="contact-video-side" data-aos="fade-left">
+                    <div class="video-tour-wrapper">
+                        <div class="video-aspect-ratio">
+                            <iframe
+                                src="https://www.youtube.com/embed/Mebkh22_y9k?autoplay=1&mute=1&loop=1&playlist=Mebkh22_y9k"
+                                title="Tour This Ultra-Luxury Custom Home in Park City | Crafted by Jaffa Group"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="video-overlay-text">
+                            <h3>Tour This Ultra-Luxury Custom Home</h3>
+                            <p>Get inspired by our latest project in Park City before sharing your vision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo">
+                <span class="logo-text">Jaffa Group</span>
+                <span class="logo-design-build">Design Build</span>
+            </div>
+                    <p class="footer-tagline">Designing architecture <br> for life</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#portfolio">Projects</a></li>
+                            <li><a href="#catalog">Catalog</a></li>
+                            <li><a href="#steps">Steps</a></li>
+                            <li><a href="#">Photography</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <p>hello@jaffa.group</p>
+                        <p>+1 800 555 ARCH</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jaffa Group Architecture. All rights reserved. <span style="opacity: 0.5; margin-left: 10px;">| Designed with purpose.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
